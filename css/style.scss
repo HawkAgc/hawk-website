@@ -2,4 +2,65 @@
 @import '../output.css';
 
 $primary-text-color: #616161;
-$primary-title-color: black;
+$primary-title-color: #000000;
+$secundary-title-color: #0148B3;
+
+html, body {
+    background-image: url('/img/main-background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.menu_container {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 16px 170px;
+
+    #left_side_menu {
+        display: flex;
+
+        h2 {
+            color: $primary-title-color;
+            font-size: 2em;
+            font-family: Helvetica;
+        }
+
+        #nav_bar {
+            ul {
+                display: flex;
+                flex-direction: row;
+                margin-top: 10px;
+                margin-left: 50px;
+
+                li {
+                    color: $primary-text-color;
+                    font-family: Helvetica;
+                    font-size: 1.1em;
+                    padding: 0px 10px;
+                }
+            }
+        }
+    }
+
+    #right_side_menu {
+        display: flex;
+        margin-top: 10px;
+
+        #social_media_links {
+            display: flex;
+            padding-left: 40px;
+
+            a {
+                padding-right: 10px;
+                img {
+                    height: 25px;
+                    width: 25px;
+                }
+            }
+        }
+
+    }
+
+}
